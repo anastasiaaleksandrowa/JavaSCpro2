@@ -18,3 +18,17 @@ const initialData = [{
         ],
     },
 ];
+
+function displayReviews() {
+    const reviewsContainer = document.getElementById('reviews-container');
+    reviewsContainer.innerHTML = ''; // Очищаем контейнер перед добавлением
+
+    initialData.forEach(product => {
+        product.reviews.forEach(review => {
+            const reviewDiv = document.createElement('div');
+            reviewDiv.className = 'review';
+            reviewDiv.textContent = review.text;
+            reviewsContainer.appendChild(reviewDiv);
+        });
+    });
+}
