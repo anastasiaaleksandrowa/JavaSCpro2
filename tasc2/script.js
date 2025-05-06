@@ -44,3 +44,16 @@ function addReview(text) {
     };
     initialData[0].reviews.push(newReview);
 }
+document.getElementById('submit-review').addEventListener('click', () => {
+    const reviewInput = document.getElementById('review-input');
+
+    try {
+        addReview(reviewInput.value);
+        displayReviews();
+
+        reviewInput.value = '';
+
+    } catch (error) {
+        alert(error.message);
+    }
+});
