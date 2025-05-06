@@ -13,3 +13,9 @@ class Library {
     get allBooks() {
         return this.#books;
     }
+    addBook(title) {
+        if (this.hasBook(title)) {
+            throw new Error(`Книга "${title}" уже существует в библиотеке.`);
+        }
+        this.#books.push(title);
+    }
