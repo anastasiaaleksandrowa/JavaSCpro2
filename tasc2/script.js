@@ -57,3 +57,4 @@ document.getElementById('submit-review').addEventListener('click', () => {
         alert(error.message);
     }
 });
+displayReviews();
