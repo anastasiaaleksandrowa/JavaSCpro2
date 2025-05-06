@@ -26,3 +26,7 @@ class Library {
         }
         this.#books.splice(index, 1);
     }
+    hasBook(title) {
+        return this.#books.includes(title);
+    }
+}
