@@ -10,4 +10,6 @@ class Library {
         }
         this.#books = uniqueBooks;
     }
-}
+    get allBooks() {
+        return this.#books;
+    }
