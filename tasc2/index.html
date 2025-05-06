@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система отзывов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        #reviews-container {
+            margin-top: 20px;
+        }
+        
+        .review {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Отзывы о продуктах</h1>
+
+    <label for="review-input">Введите ваш отзыв:</label><br>
+    <textarea id="review-input" rows="4" cols="50"></textarea><br>
+    <button id="submit-review">Отправить отзыв</button>
+
+    <div id="reviews-container"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
