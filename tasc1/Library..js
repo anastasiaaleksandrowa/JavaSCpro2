@@ -19,3 +19,10 @@ class Library {
         }
         this.#books.push(title);
     }
+    removeBook(title) {
+        const index = this.#books.indexOf(title);
+        if (index === -1) {
+            throw new Error(`Книга "${title}" не найдена в библиотеке.`);
+        }
+        this.#books.splice(index, 1);
+    }
